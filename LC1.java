@@ -12,7 +12,7 @@ class LC1 {
             if(indexMap.containsKey(difference) && indexMap.get(difference) != i) { // Si existe una llave que sea igual a la diferencia en el mapa y su indice no sea el mismo (i), los guardo en el array de resultado
                 indexArr[0] = i;
                 indexArr[1] = indexMap.get(difference);
-                break;
+                break; // Salgo para evitar sobreescribir el resultado
             }
         }
         return indexArr;
