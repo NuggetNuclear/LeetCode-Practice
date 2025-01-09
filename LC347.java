@@ -1,7 +1,8 @@
 class LC347 {
     public int[] topKFrequent(int[] nums, int k) {
+        // O(n^2) TC | O(n) SC
+        
         int[] repetidos = new int[k];
-
         HashMap<Integer, Integer> repetidosMapa = new HashMap<>();
 
         for(int i = 0; i < nums.length; i++) {
@@ -26,7 +27,6 @@ class LC347 {
 
             repetidosMapa.put(aux, 0);
         }
-
         return repetidos;
     }
 }
